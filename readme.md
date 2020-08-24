@@ -103,9 +103,3 @@ In the following figure there is a graphical example of how a K-Means algorithm 
 * Cluster II with hotel, gym/fitness center, and american/italian restaunrant
 * Cluster III with mexican restaurant, bodega, and bakery
 * Cluster IV with bus line, swim school, trail, and park
-
-Anyone who wants to move from Manhattan, US to Toronto, CA or vice versa can utilize the above results of the anlayses to find the best place where is similar to one's previous environment.
-
-The maps displaying the clusters by different colors can offer the useful geographical information
-The word cloud gives the intuition to find and recognize the similar place easily
-The description of clusters offers the characteristic of neighborhood where one has lived, and one will move in
