@@ -2,12 +2,12 @@
 ### <p align="right"> Dongchul Choi</p>
 
 
-## 1. Introduction
+### 1. Introduction
 <p align="justify">Recently, Machine Learning (ML) algorithms are widely used in the study of data instead of traditional statistics. ML algorithms bring advantages because they offer solutions to problems related to the big quantities of data and set fewer constraints than traditional statistics. In particular, unsupervised learning algorithms are used to find patterns in data in terms of similarity between samples. Depending on the pattern within the data, different algorithms are used. For non-convex data it is used Density-Based Spatial Clustering (DBSCAN). On the other hand, for convex data it is used a well known algorithm as K-Means. </p>
 
 <p align="justify">Foursquare is a website where people comment and rank food sites, coffee sites, malls and parks. For instance, let's think of a person who has to move from New York city, USA to the city of Toronto, Canada or vice versa. Foursquare location data along with a clustering algorithm can suggest a neighborhood in order to help the one to live in Toronto in a similar place. The neighborhood that will be suggested, will not be a random suggestion, but instead will be a place for his pleasure. Thus, the clustered location data from New York and Toronto will be used to predict a good living neighborhood for the one.</p>
 
-## 2. Data
+### 2. Data
 
 <p align="justify">For this project, the Foursquare API will be used. A list of neighborhoods in New York and Toronto is web-crawled or scraped and their respective location in longitude and latitude coordinates is obtained by Geocoder library. The sources are the following: </p>
 
@@ -18,12 +18,12 @@
 
 <p align="justify">The similarities will be determined based on the frequency of the categories found in the neighborhoods. These similarities are a strong indicator and can help the one to decide whether to move in a particular neighborhood with the preference of the similarity of the previous neighborhood </p>
 
-## 3. Methodology
+### 3. Methodology
 
-### 3.1. Feature Extraction
+#### 3.1. Feature Extraction
 <p align="justify">For feature extraction, One Hot Encoding is used in terms of categories. Therefore, each feature is a category that belongs to a venue. Each feature becomes binary, this means that 1 means this category is found in the venue and 0 means the opposite. Then, all the venues are grouped by the neighborhoods, calculating the means of all the features. This make the neighborhoods featured by the nearby venues, indicating the frequency of occrrence of each category.</p>
 
-### 3.2. Unsupervised Learning
+#### 3.2. Unsupervised Learning
 <p align="justify">For the purpose of doing unsupervised learning to find similarities between neighborhoods, a clustering algorithm is implemented. In this case, K-Means clustering is used due to its simplicity and its similiraty approach to find patterns. </p>
 
 * **K-Means Clustering:**
@@ -37,7 +37,7 @@ In the following figure there is a graphical example of how a K-Means algorithm 
 
 <p align="justify">It is necessary for this algorithm to have a prior idea about the number of clusters since it is considered an input of this algorithm. For this reason, the elbow method is implemented. A chart that compares error and the number of clusters, k is done and the elbow is selected. Then, further analysis of each cluster is done. </p>
 
-## 4. Results
+### 4. Results
 
 <p align="justify">First, the result of segmenting the Manhattan, US, and the Toronto, CA is plotted in geographical maps to get a notion of the segmentations of the areas. In the two following images are shown the neighborhoods in Manhattan and Toronto. </p>
 <p align="center">
@@ -91,8 +91,7 @@ In the following figure there is a graphical example of how a K-Means algorithm 
 <p align="justify">We can see the following. Cluster I focuses on neighborhoods that have coffee shop, cafe, restaurant, and bar. It seems like usual neighborhood around us. Cluster II focuses on neighborhoods that have hotel, gym/fitness center, and american/italian restaunrant. Cluster III focuses on neighborhoods that have mexican restaurant, bodega, and bakery. it seems like the neighborhoods with the hispanic culture. Cluster IV focuses on neighborhoods that have bus line, swim school, trail, and park.</p>
 
 
-## 5. Conclusion 
-
+### 5. Conclusion 
 
 <p align="justify">In this work a segmentation between two different countries is done. This segementation involves the neighborhoods in Manhattan, New York and the neighborhoods near to the center of Toronto. The data is web crawled and scraped, and the venues around the neighborhoods is acquired using the Foursquare API. One Hot Encoding is used for converting the categories of the venues into the feature matrix. Then, all venues are grouped by neighborhoods and at the same time the mean is calculated. Hence, the resulting features used are the frequency of occurrence from each category in a neighborhood.</p>
 
