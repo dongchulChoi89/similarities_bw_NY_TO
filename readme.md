@@ -1,4 +1,4 @@
-# <p align="center"> Data Alaysis of similarities of cities between New York and Toronto</p>
+## <p align="center"> Data Alaysis of similarities of cities between New York and Toronto</p>
 ### <p align="right"> Dongchul Choi</p>
 
 
