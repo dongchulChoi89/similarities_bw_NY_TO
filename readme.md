@@ -1,5 +1,5 @@
 ## <p align="center"> Data Analysis of similarities of cities between New York and Toronto</p>
-### <p align="right"> Dongchul Choi</p>
+### <p align="right"> Author: Dongchul Choi</p>
 ### <p align="right"> Jupyter Notebook: https://ibm.co/354gaBF</p>
 
 
